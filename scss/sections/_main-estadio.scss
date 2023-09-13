@@ -2,10 +2,21 @@
     width: 80%;
     margin: auto;
     margin-block: 28px;
-}
 
-.container__info-elland-road h3 {
-    color: #005B9E;
+    h3 {
+        color: #005B9E;
+    }
+
+    @media (max-width:$media-720) {
+        h3 {
+            font-size: 16px;
+        }
+
+        p {
+            font-size: 12px;
+        }
+    }
+
 }
 
 .container__ubicación {
@@ -15,3 +26,4 @@
     justify-content: center;
 
 }
+

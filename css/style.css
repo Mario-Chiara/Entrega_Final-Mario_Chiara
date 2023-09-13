@@ -211,9 +211,16 @@ footer .footer__redes {
   margin: auto;
   margin-block: 28px;
 }
-
 .container__info-elland-road h3, .container__info-elland-road .h3 {
   color: #005B9E;
+}
+@media (max-width: 720px) {
+  .container__info-elland-road h3, .container__info-elland-road .h3 {
+    font-size: 16px;
+  }
+  .container__info-elland-road p {
+    font-size: 12px;
+  }
 }
 
 .container__ubicación {
@@ -229,12 +236,7 @@ footer .footer__redes {
   align-items: center;
   color: #005B9E;
 }
-
-.title-last-matches {
-  padding: 0px 0px 20px 0px;
-}
-
-.container-vid-matches {
+.container-matches .container-vid-matches {
   width: 80%;
   min-width: 80%;
   display: inline-flex;
@@ -243,8 +245,7 @@ footer .footer__redes {
   justify-content: center;
   flex-wrap: wrap;
 }
-
-.vid-matches {
+.container-matches .container-vid-matches .vid-matches {
   margin: 8px;
 }
 
@@ -256,14 +257,12 @@ footer .footer__redes {
   color: #005B9E;
   margin-block: 135px;
 }
-
-.inputs-form {
+.container-form-contac .inputs-form {
   width: 400px;
   display: flex;
   flex-direction: column;
 }
-
-.input-element-contact {
+.container-form-contac .inputs-form .input-element-contact {
   height: 50px;
   margin: 10px;
   padding: 4px;
@@ -273,8 +272,7 @@ footer .footer__redes {
   border-radius: 4px;
   font-size: 16px;
 }
-
-.button-element-contact {
+.container-form-contac .inputs-form .button-element-contact {
   width: 380px;
   height: 50px;
   margin: 10px;
@@ -284,8 +282,7 @@ footer .footer__redes {
   font-size: 24px;
   color: #f8f8f8;
 }
-
-.button-element-contact:hover {
+.container-form-contac .inputs-form .button-element-contact:hover {
   background-color: #FFDE10;
   color: #005B9E;
   border-color: #FFDE10;
@@ -302,16 +299,6 @@ body {
 
 .carrousel-home {
   border-top: #FFDE10 solid 6px;
-}
-
-/*/ ESTADIO /*/
-.container__info-elland-road h3, .container__info-elland-road .h3 {
-  color: #005B9E;
-  font-size: 16px;
-}
-
-.container__info-elland-road p {
-  font-size: 12px;
 }
 
 /*!

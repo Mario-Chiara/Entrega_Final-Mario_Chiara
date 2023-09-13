@@ -2,17 +2,6 @@
 * {
   margin: 0px;
   padding: 0px;
-  font-family: "Barlow-Medium";
-}
-
-.container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm {
-  display: flex;
-  flex-direction: column;
-  font-size: 24px;
-  color: #005B9E;
-}
-.container-fluid a, .container-xxl a, .container-xl a, .container-lg a, .container-md a, .container-sm a {
-  color: #005B9E;
 }
 
 @font-face {
@@ -27,16 +16,16 @@
   font-family: "Barlow-Blank";
   src: url(../resources/font/Barlow-Black.ttf);
 }
-a {
-  text-decoration: none;
+.container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm {
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  color: #005B9E;
+}
+.container-fluid a, .container-xxl a, .container-xl a, .container-lg a, .container-md a, .container-sm a {
   color: #005B9E;
 }
 
-.carrousel-home {
-  border-top: #FFDE10 solid 6px;
-}
-
-/*/ Nex match /*/
 .container__nextmatch {
   width: 80%;
   margin: auto;
@@ -124,7 +113,6 @@ a {
   object-fit: cover;
 }
 
-/*/ Footer /*/
 #footer {
   width: 100%;
   margin: auto;
@@ -133,7 +121,6 @@ a {
   justify-content: space-between;
   align-items: center;
   color: #005B9E;
-  background-color: rgba(245, 245, 245, 0.4509803922);
 }
 
 #footer p {
@@ -157,7 +144,6 @@ a {
   align-items: center;
 }
 
-/*/ PLANTEL /*/
 .container__players-coach {
   display: flex;
   flex-direction: column;
@@ -192,7 +178,6 @@ a {
   margin: 8px;
 }
 
-/*/ ESTADIO /*/
 .container__info-elland-road {
   width: 80%;
   margin: auto;
@@ -210,7 +195,6 @@ a {
   justify-content: center;
 }
 
-/*/ PARTIDOS /*/
 .container-matches {
   display: flex;
   flex-direction: column;
@@ -236,7 +220,6 @@ a {
   margin: 8px;
 }
 
-/*/ CONTACTO /*/
 .container-form-contac {
   display: flex;
   flex-direction: column;
@@ -278,6 +261,19 @@ a {
   background-color: #FFDE10;
   color: #005B9E;
   border-color: #FFDE10;
+}
+
+a {
+  text-decoration: none;
+  color: #005B9E;
+}
+
+body {
+  font-family: "Barlow-Medium";
+}
+
+.carrousel-home {
+  border-top: #FFDE10 solid 6px;
 }
 
 @media (max-width: 720px) {

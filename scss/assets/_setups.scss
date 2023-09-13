@@ -1,0 +1,23 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+$primary-color: #005B9E;
+$secondary-color: #FFDE10;
+$tertiary-color: #c4c4c4;
+
+@font-face {
+    font-family: "Barlow-Medium";
+    src: url(../resources/font/Barlow-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Barlow-Bold";
+    src: url(../resources/font/Barlow-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Barlow-Blank";
+    src: url(../resources/font/Barlow-Black.ttf);
+}

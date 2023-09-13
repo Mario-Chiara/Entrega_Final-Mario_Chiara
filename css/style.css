@@ -22,97 +22,24 @@
   font-size: 24px;
   color: #005B9E;
 }
-.container-fluid a, .container-xxl a, .container-xl a, .container-lg a, .container-md a, .container-sm a {
+.container-fluid li a, .container-xxl li a, .container-xl li a, .container-lg li a, .container-md li a, .container-sm li a {
   color: #005B9E;
 }
 
-.container__nextmatch {
-  width: 80%;
-  margin: auto;
-  margin-block: 1%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  background-color: rgba(245, 245, 245, 0.4509803922);
+@media (max-width: 720px) {
+  .container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm {
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+  }
+  .container-fluid img, .container-xxl img, .container-xl img, .container-lg img, .container-md img, .container-sm img {
+    width: 150px;
+  }
+  .container-fluid li a, .container-xxl li a, .container-xl li a, .container-lg li a, .container-md li a, .container-sm li a {
+    display: flex;
+    justify-content: center;
+  }
 }
-
-.nextmatch__logo {
-  display: flex;
-  justify-content: center;
-}
-
-.nextmatch__logo img {
-  width: 160px;
-  margin-top: 1%;
-}
-
-.nextmach__teams {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  color: #005B9E;
-  align-items: center;
-  margin-block: 1%;
-}
-
-.nextmach__teams img {
-  width: 30%;
-}
-
-.nextmach__teams h3, .nextmach__teams .h3 {
-  width: 140px;
-  font-family: "Barlow-Bold";
-  display: flex;
-  justify-content: center;
-  margin-bottom: 0%;
-}
-
-.nextmach__teamlocal {
-  width: auto;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between 1%;
-}
-
-.nextmach__date {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 14px;
-}
-
-.nextmach__date p {
-  margin-bottom: 0%;
-}
-
-.nextmach__teamvisitor {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between 1%;
-}
-
-.nextmach__teams h3, .nextmach__teams .h3 {
-  font-size: 16px;
-}
-
-/*/ Last News /*/
-.container__lastnews {
-  width: 60%;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  grid-gap: 1%;
-}
-
-.lastnews__img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 #footer {
   width: 100%;
   margin: auto;
@@ -142,6 +69,96 @@
 .footer__redes {
   display: flex;
   align-items: center;
+}
+
+.container__nextmatch {
+  width: 80%;
+  margin: auto;
+  margin-block: 1%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(245, 245, 245, 0.4509803922);
+}
+.container__nextmatch .nextmatch__logo {
+  display: flex;
+  justify-content: center;
+}
+.container__nextmatch .nextmatch__logo img {
+  width: 190px;
+  margin-top: 1%;
+}
+.container__nextmatch .nextmach__teams {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  color: #005B9E;
+  align-items: center;
+  margin-block: 1%;
+}
+.container__nextmatch .nextmach__teams img {
+  width: 30%;
+}
+.container__nextmatch .nextmach__teams h3, .container__nextmatch .nextmach__teams .h3 {
+  width: 140px;
+  font-family: "Barlow-Bold";
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0%;
+}
+.container__nextmatch .nextmach__teams .nextmach__team-l-v {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.container__nextmatch .nextmach__teams .nextmach__date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container__nextmatch .nextmach__teams .nextmach__date p {
+  margin-bottom: 0%;
+  font-size: 16px;
+}
+@media (max-width: 720px) {
+  .container__nextmatch .nextmatch__logo img {
+    width: 100px;
+    margin-top: 1%;
+  }
+  .container__nextmatch .nextmach__teams h3, .container__nextmatch .nextmach__teams .h3 {
+    width: auto;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0%;
+  }
+  .container__nextmatch .nextmach__teams .nextmach__date p {
+    margin-bottom: 0%;
+    font-size: 10px;
+  }
+}
+
+.container__lastnews {
+  width: 60%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 1%;
+}
+@media (max-width: 720px) {
+  .container__lastnews {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+  }
+}
+.container__lastnews img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .container__players-coach {
@@ -276,160 +293,84 @@ body {
   border-top: #FFDE10 solid 6px;
 }
 
-@media (max-width: 720px) {
-  .container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm {
-    display: flex;
-    flex-direction: row;
-  }
-  .img__logo {
-    width: 150px;
-  }
-  .nav-item a {
-    font-size: 16px;
-    display: flex;
-    justify-content: center;
-  }
-  /*/ Nex match /*/
-  .container__nextmatch {
-    width: 80%;
-    margin: auto;
-    margin-block: 1%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    background-color: rgba(245, 245, 245, 0.4509803922);
-  }
-  .nextmatch__logo {
-    display: flex;
-    justify-content: center;
-  }
-  .nextmatch__logo img {
-    width: 100px;
-    margin-top: 1%;
-  }
-  .nextmach__teams {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    color: #005B9E;
-    align-items: center;
-    margin-block: 1%;
-  }
-  .nextmach__teams img {
-    width: 40px;
-  }
-  .nextmach__teams h3, .nextmach__teams .h3 {
-    width: 80px;
-    font-family: "Barlow-Bold";
-    display: flex;
-    justify-content: center;
-    font-size: 12px;
-    margin-bottom: 0%;
-  }
-  .nextmach__teamlocal {
-    width: auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between 1%;
-  }
-  .nextmach__date {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 14px;
-  }
-  .nextmach__date p {
-    margin-bottom: 0%;
-    font-size: 10px;
-  }
-  .nextmach__teamvisitor {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between 1%;
-  }
-  /*/ Last News /*/
-  .container__lastnews {
-    width: 60%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-    grid-gap: 1%;
-  }
-  .lastnews__img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  /*/ Footer /*/
-  #footer {
-    width: 100%;
-    margin: auto;
-    margin-block: 8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    color: #005B9E;
-  }
-  #footer p {
-    margin-bottom: 0%;
-    font-size: 12px;
-  }
-  .footer__logo {
-    width: 20px;
-  }
-  .footer__info {
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .footer__redes {
-    display: flex;
-    align-items: center;
-  }
-  /*/ PLANTEL /*/
-  .container__players-coach {
-    display: flex;
-    flex-direction: column;
-    margin-top: 8px;
-  }
-  .container__players {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    color: #005B9E;
-  }
-  .players-title {
-    font-size: 12px;
-    color: #c4c4c4;
-    font-family: "Barlow-Blank";
-  }
-  .players__cards {
-    display: inline-flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    border-bottom: rgba(245, 245, 245, 0.4509803922) solid 4px;
-  }
-  .players__img {
-    width: 60px;
-    margin: 4px;
-  }
-  /*/ ESTADIO /*/
-  .container__info-elland-road h3, .container__info-elland-road .h3 {
-    color: #005B9E;
-    font-size: 16px;
-  }
-  .container__info-elland-road p {
-    font-size: 12px;
-  }
+/*/ Footer /*/
+#footer {
+  width: 100%;
+  margin: auto;
+  margin-block: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: #005B9E;
 }
+
+#footer p {
+  margin-bottom: 0%;
+  font-size: 12px;
+}
+
+.footer__logo {
+  width: 20px;
+}
+
+.footer__info {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__redes {
+  display: flex;
+  align-items: center;
+}
+
+/*/ PLANTEL /*/
+.container__players-coach {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8px;
+}
+
+.container__players {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  color: #005B9E;
+}
+
+.players-title {
+  font-size: 12px;
+  color: #c4c4c4;
+  font-family: "Barlow-Blank";
+}
+
+.players__cards {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  border-bottom: rgba(245, 245, 245, 0.4509803922) solid 4px;
+}
+
+.players__img {
+  width: 60px;
+  margin: 4px;
+}
+
+/*/ ESTADIO /*/
+.container__info-elland-road h3, .container__info-elland-road .h3 {
+  color: #005B9E;
+  font-size: 16px;
+}
+
+.container__info-elland-road p {
+  font-size: 12px;
+}
+
 /*!
  * Bootstrap  v5.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors

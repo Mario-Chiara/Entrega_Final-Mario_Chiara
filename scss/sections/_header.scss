@@ -4,7 +4,29 @@
     font-size: 24px;
     color: #005B9E;
 
-    a {
+    li a {
         color: #005B9E;
     }
+}
+
+@media (max-width:$media-720) {
+
+    .container-fluid {
+        display: flex;
+        flex-direction: row;
+        font-size: 16px;
+
+        img {
+            width: 150px;
+        }
+
+        li a {
+            
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+
+
 }

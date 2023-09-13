@@ -1,8 +1,3 @@
-* {
-    margin: 0px;
-    padding: 0px;
-}
-
 $primary-color: #005B9E;
 $secondary-color: #FFDE10;
 $tertiary-color: #c4c4c4;
@@ -20,4 +15,6 @@ $tertiary-color: #c4c4c4;
 @font-face {
     font-family: "Barlow-Blank";
     src: url(../resources/font/Barlow-Black.ttf);
-}
+} 
+
+$media-720: 720px;

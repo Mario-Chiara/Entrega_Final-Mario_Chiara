@@ -21,7 +21,7 @@
         width: 100%;
         display: flex;
         justify-content: space-around;
-        color: #005B9E;
+        color: $primary-color;
         align-items: center;
         margin-block: 1%;
 
@@ -83,7 +83,7 @@
 }
 
 .container__lastnews {
-    width: 60%;
+    width: 80%;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -99,6 +99,12 @@
     img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        transition: 0.7s;
     }
+
+.lastnews__item  :hover{
+    transform: scale(1.02);
+    transition: 0.7s;
+}
+
 }

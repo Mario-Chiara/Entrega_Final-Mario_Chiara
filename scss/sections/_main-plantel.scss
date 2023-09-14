@@ -21,6 +21,12 @@
         img {
             width: 150px;
             margin: 8px;
+            transition: 0.7s;
+        }
+
+        & :hover {
+            transform: scale(1.02);
+            transition: 0.7s;
         }
     }
 

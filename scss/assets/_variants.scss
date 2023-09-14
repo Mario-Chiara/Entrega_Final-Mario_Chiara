@@ -4,17 +4,17 @@ $tertiary-color: #c4c4c4;
 
 @font-face {
     font-family: "Barlow-Medium";
-    src: url(../resources/font/Barlow-Medium.ttf);
+    src: url(/resources/font/Barlow-Bold.ttf);
 }
 
 @font-face {
     font-family: "Barlow-Bold";
-    src: url(../resources/font/Barlow-Bold.ttf);
+    src: url(/resources/font/Barlow-Bold.ttf);
 }
 
-@font-face {
+@font-face {    
     font-family: "Barlow-Blank";
-    src: url(../resources/font/Barlow-Black.ttf);
+    src: url(/resources/font/Barlow-Black.ttf);
 } 
 
 $media-720: 720px;

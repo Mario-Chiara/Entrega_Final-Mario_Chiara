@@ -1,54 +1,105 @@
 .container__players-coach {
+    width: 80%;
     display: flex;
     flex-direction: column;
     margin-top: 8px;
-    
-    .container__players {
+    background-color: white;
+    margin: auto;
+    margin-top: 1%;
+
+    .container__sections-players {
         width: 80%;
         display: flex;
         flex-direction: column;
         margin: auto;
+
+        h3 {
+            font-size: 20px;
+            color: #c4c4c4;
+            font-family: "Barlow-Blank";
+        }
+        
+        .players__cards {
+            display: inline-flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            border-bottom: #e5e5e573 solid 2px;
+            
+            .players {
+                margin: 10px;
+                width: 150px;
+                position: relative;
+                overflow: hidden;
+                box-shadow: black;
+                transition: 0.7s;
+
+                
+                img {
+                    width: 100%;
+                    border-radius: 8px;
+                }
+                
+                .players__title {
+                    width: 100%;
+                    height: 30px;
+                    position: absolute;
+                    background-color: $primary-color;
+                    bottom: 0px;
+                    opacity: 0;
+                    transition: 0.7s;
+
+                    
+                    h4 {
+                        width: 100%;
+                        margin: 0;
+                        text-align: center;
+                        color: #ffffff;
+                        font-size: 20px;
+                    }
+                }
+                
+                &:hover {
+                    cursor: pointer;
+                    transform: scale(1.06);
+                    border-radius: 8px;
+                    transition: 0.7s;
+                }
+                
+                &:hover .players__title {
+                    opacity: 100;
+                    transition: 0.7s;
+                }
+            }         
+        }
+        
+        @media (max-width:$media-720) {
+        
+            h3 {
+                font-size: 12px;
+            }
+        
+            .players__cards .players {
+                width: 60px;
+                margin: 4px;
+                transition: 0.7s;
+            }
+        }
+
+      
     }
     
-    .players__cards {
-        display: inline-flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-        border-bottom: #f5f5f573 solid 4px;
-
-        img {
-            width: 150px;
-            margin: 8px;
-            transition: 0.7s;
-        }
-
-        & :hover {
-            transform: scale(1.02);
-            transition: 0.7s;
-        }
-    }
-
-    h5 {
-        font-size: 20px;
-        color: #c4c4c4;
-        font-family: "Barlow-Blank";
-    }
-
-    @media (max-width:$media-720) {
     
-        h5 {
-            font-size: 12px;
-        }
-
-        .players__cards img {
-            width: 60px;
-            margin: 4px;
-        }
-    }
+    
+    
+    
 }
 
 
 
 
+
+
+
+
+    

@@ -3,18 +3,30 @@ $secondary-color: #FFDE10;
 $tertiary-color: #c4c4c4;
 
 @font-face {
+    font-family: "Barlow-Light";
+    src: url(../resources/font/Barlow-Light.ttf);
+}
+
+@font-face {
+    font-family: "Barlow-Regular";
+    src: url(../resources/font/Barlow-Regular.ttf);
+}
+
+@font-face {
     font-family: "Barlow-Medium";
-    src: url(/resources/font/Barlow-Bold.ttf);
+    src: url(../resources/font/Barlow-Bold.ttf);
 }
 
 @font-face {
     font-family: "Barlow-Bold";
-    src: url(/resources/font/Barlow-Bold.ttf);
+    src: url(../resources/font/Barlow-Bold.ttf);
 }
 
 @font-face {    
     font-family: "Barlow-Blank";
-    src: url(/resources/font/Barlow-Black.ttf);
+    src: url(../resources/font/Barlow-Black.ttf);
 } 
 
 $media-720: 720px;
+
+$media-1000: 1000px;

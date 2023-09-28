@@ -2,9 +2,24 @@
     width: 80%;
     margin: auto;
     margin-block: 28px;
+    background-color: #ffffff;
 
     h3 {
         color: $primary-color;
+        font-family:"Barlow-Medium";
+    }
+
+    p {
+        font-family: "Barlow-Regular";
+        color: #000000;
+    }
+
+    .container__ubicación {
+        width: 100%;
+
+        iframe {
+            width: 100%;
+        }
     }
 
     @media (max-width:$media-720) {
@@ -18,12 +33,3 @@
     }
 
 }
-
-.container__ubicación {
-    width: 80%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-
-}
-

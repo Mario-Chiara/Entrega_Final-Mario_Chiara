@@ -1,0 +1,39 @@
+.container__news {
+    width: 60%;
+    margin: auto;
+    padding: 16px;
+    background-color: #ffffff;
+
+    .container__title-news {
+        transform: skew(-20deg);
+
+        h3 {
+            display: inline-block;
+            background-color: $secondary-color;
+            padding: 4px;
+            color: $primary-color;
+            font-family: "Barlow-Medium";
+            font-size: 16PX;
+        }
+    }
+
+    .secction__news {
+        h3 {
+            font-family: "Barlow-Regular";
+            color: $primary-color;
+        }
+
+        img {
+            width: 100%;
+            padding: 8px 0px 8px 0px ;
+        }
+
+        h4 {
+            font-family: "Barlow-Regular";
+        }
+
+        p {
+            font-family: "Barlow-Regular";
+        }
+    }
+}

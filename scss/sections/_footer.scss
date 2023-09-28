@@ -1,10 +1,13 @@
 footer {
     width: 100%;
-    margin-block: 8px;
+    height: 100px;
+    margin-top: 8px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: $primary-color;
+    background-color: #ebebeb73;
+    padding: 8px;
 
     .footer__logo {
         width: 60px;
@@ -12,7 +15,8 @@ footer {
 
     p {
         margin-bottom: 0%;
-        font-size: 12px;
+        font-family: "Barlow-Regular";
+        font-size: 14px;
     }
 
     .footer__info {
@@ -25,6 +29,10 @@ footer {
     .footer__redes {
         display: flex;
         align-items: center;
+
+        a {
+            padding: 2px;
+        }
     }
 }
 

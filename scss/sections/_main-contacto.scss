@@ -1,7 +1,7 @@
 .container-form-contac {
     width: 400px;
     margin: auto;
-    margin-block: 180px; 
+    margin-block: 180px;
     border-radius: 16px;
     background-color: #ffffff;
     display: flex;
@@ -11,9 +11,6 @@
     color: $primary-color;
     box-shadow: 5px 5px 5px 5px rgba(230, 230, 230, 0.3);
 
-    @media (max-width:$media-1000) {
-        width: 360px;
-    }
 
 
     .inputs-form {
@@ -40,22 +37,21 @@
             border: 2px solid $primary-color;
             border-radius: 4px;
             font-size: 24px;
-            color: #f8f8f8; 
+            color: #f8f8f8;
             transition: 0.2s;
         }
 
         .button-element-contact:hover {
             background-color: $secondary-color;
             color: $primary-color;
-            border-color: $secondary-color; 
-            transform: scale(1.02); 
+            border-color: $secondary-color;
+            transform: scale(1.02);
             transition: 0.2s;
         }
     }
 
-   
+    @media (max-width:$media-1000) {
+        width: 360px;
+    }
+
 }
-
-
-
-

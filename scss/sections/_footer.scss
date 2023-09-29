@@ -35,24 +35,23 @@ footer {
             padding: 2px;
         }
     }
-}
 
-@media (max-width:$media-720) {
-    footer {
+    @media (max-width:$media-720) {
         display: flex;
         flex-direction: column;
 
         .footer__logo {
             width: 30px;
         }
-        
+
         .footer__info {
             width: 100%;
-            p{
-                font-size: 12px;
+
+            p {
+                font-size: 10px;
             }
         }
-        
+
         .footer__redes {
             img {
                 width: 26px;

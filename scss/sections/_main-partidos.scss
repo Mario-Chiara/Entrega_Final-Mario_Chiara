@@ -1,5 +1,5 @@
 .container-matches {
-    width: 90%;
+    width: 80%;
     padding: 8px;
     margin: auto;
     display: flex;
@@ -15,7 +15,7 @@
             @extend .title__sections;
 
         }
-    
+
         .Vid__cards {
             width: 100%;
             display: flex;
@@ -24,34 +24,45 @@
             gap: 8px;
 
             .Vid {
-                width: 100%;
+
                 .vid-matches {
                     width: 480px;
                     height: 260px;
                     border-radius: 8px;
-
-                }
-
-                @media (max-width:$media-1000) {
-                    width: 100%;
-                    .vid-matches {
-
-                        width: 100%;
-                        height: 300px;
-                    }
-                }
-
-                @media (max-width:$media-720) {
-                    width: 100%;
-                    .vid-matches {
-
-                        width: 100%;
-                        height: 200px;
-                    }
                 }
             }
         }
 
+    }
+
+    @media (max-width:$media-1000) {
+        width: 96%;
+        .container-vid-matches {
+            .Vid__cards {
+                .Vid {
+                    width: 100%;
+                    .vid-matches {
+                        width: 100%;
+                    height: 300px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width:$media-720) {
+        width: 96%;
+        .container-vid-matches {
+            .Vid__cards {
+                .Vid {
+                    width: 100%;
+                    .vid-matches {
+                        width: 100%;
+                        height: 200px
+                    }
+                }
+            }
+        }
     }
 
 }

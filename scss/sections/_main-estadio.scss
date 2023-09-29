@@ -4,9 +4,9 @@
     margin-block: 28px;
     background-color: #ffffff;
 
-   .container__title-elland-road {
-    @extend .title__sections;
-   }
+    .container__title-elland-road {
+        @extend .title__sections;
+    }
 
     p {
         font-family: "Barlow-Regular";
@@ -24,19 +24,16 @@
     @media (max-width:$media-720) {
         width: 90%;
 
-
         p {
             font-size: 12px;
         }
 
         .container__ubicación {
-            
-    
+
             iframe {
                 width: 100%;
                 height: 250px;
             }
         }
     }
-
 }

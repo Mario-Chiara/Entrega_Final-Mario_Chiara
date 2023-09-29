@@ -74,6 +74,14 @@
         }
     }
 
+    @media (max-width:$media-1000) {
+        .container__sections-players {
+            .players__cards .players{
+                width: 100px;
+            }
+        }
+    }
+
     @media (max-width:$media-720) {
         width: 96%;
         .container__sections-players {

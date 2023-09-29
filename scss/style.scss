@@ -10,8 +10,8 @@
 @import "./sections/main-partidos";
 @import "./sections/main-contacto";
 
-@import "./components/_titles";
-
-@import "./sections/noticias-1";
+@import "./components/_title";
+@import "./components/banner";
+@import "./components/section-news";
 
 @import "../node_modules/bootstrap/scss/bootstrap";

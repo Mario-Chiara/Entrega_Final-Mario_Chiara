@@ -1,4 +1,4 @@
-.container__news {
+.section__news {
     width: 60%;
     margin: auto;
     padding: 16px;
@@ -27,4 +27,8 @@
             font-family: "Barlow-Regular";
         }
     }
+}
+
+.container__news {
+    @extend .section__news;
 }

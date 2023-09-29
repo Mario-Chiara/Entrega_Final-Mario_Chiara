@@ -73,15 +73,13 @@ body {
             }
         }
 
-    }
-
-    @media (max-width:$media-1000) {
-        .nextmach__teams .nextmach__date p {
-            margin-bottom: 0%;
-            font-size: 12px;
+        @media (max-width:$media-1000) {
+             .nextmach__date p {
+                margin-bottom: 0%;
+                font-size: 12px;
+            }
         }
     }
-
     @media (max-width:$media-720) {
         width: 96%;
 
@@ -110,75 +108,8 @@ body {
     }
 
 
-}
 
-.container-banner-home {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-    position: relative;
-    margin-block: 2%;
 
-    img {
-        width: 100%;
-        transition: opacity 0.7s;
-        transition: 0.7s;
-    }
-
-    .content__banner {
-        position: relative;
-    }
-
-    a {
-        text-decoration: none;
-        color: $primary-color;
-    }
-
-    .button__banner-home {
-        width: 180px;
-        height: 60px;
-        border: none;
-        border-radius: 8px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: #ffffff;
-        opacity: 0;
-        transition: opacity 0.3s;
-        font-family: "Barlow-Medium";
-        font-size: 28px;
-        transition: 0.7s;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-    }
-
-    @media (max-width:$media-720) {
-        width: 96%;
-        border-radius: 8px;
-
-        .button__banner-home {
-            width: 50px;
-            height: 26px;
-            font-size: 12px;
-            opacity: 1;
-        }
-
-        img {
-            opacity: 0.7;
-        }
-    }
-}
-
-.container-banner-home:hover img {
-    opacity: 0.7;
-    transition: 0.7s;
-    transform: scale(1.02);
-}
-
-.container-banner-home:hover .button__banner-home {
-    opacity: 1;
-    transition: 0.7s;
-    background-image: url(/resources/img/backgrounds/1.webp);
 }
 
 .container__lastnews {

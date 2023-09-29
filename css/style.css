@@ -415,10 +415,6 @@ body {
   margin-block: 28px;
   background-color: #ffffff;
 }
-.container__info-elland-road h3, .container__info-elland-road .h3 {
-  color: #005B9E;
-  font-family: "Barlow-Medium";
-}
 .container__info-elland-road p {
   font-family: "Barlow-Regular";
   color: #000000;
@@ -430,16 +426,20 @@ body {
   width: 100%;
 }
 @media (max-width: 720px) {
-  .container__info-elland-road h3, .container__info-elland-road .h3 {
-    font-size: 16px;
+  .container__info-elland-road {
+    width: 90%;
   }
   .container__info-elland-road p {
     font-size: 12px;
   }
+  .container__info-elland-road .container__ubicación iframe {
+    width: 100%;
+    height: 250px;
+  }
 }
 
 .container-matches {
-  width: 80%;
+  width: 90%;
   padding: 8px;
   margin: auto;
   display: flex;
@@ -448,16 +448,8 @@ body {
   background-color: #ffffff;
   margin-top: 1%;
 }
-.container-matches .container-vid-matches .container__title-matches {
-  width: 160px;
-  background-color: #FFDE10;
-  transform: skew(-20deg);
-}
-.container-matches .container-vid-matches .container__title-matches h3, .container-matches .container-vid-matches .container__title-matches .h3 {
-  padding: 0px 0px 4px 4px;
-  color: #005B9E;
-  font-family: "Barlow-Medium";
-  font-size: 16PX;
+.container-matches .container-vid-matches {
+  width: 90%;
 }
 .container-matches .container-vid-matches .Vid__cards {
   width: 100%;
@@ -470,6 +462,24 @@ body {
   width: 480px;
   height: 260px;
   border-radius: 8px;
+}
+@media (max-width: 1000px) {
+  .container-matches .container-vid-matches .Vid__cards .Vid {
+    width: 100%;
+  }
+  .container-matches .container-vid-matches .Vid__cards .Vid .vid-matches {
+    width: 100%;
+    height: 300px;
+  }
+}
+@media (max-width: 720px) {
+  .container-matches .container-vid-matches .Vid__cards .Vid {
+    width: 100%;
+  }
+  .container-matches .container-vid-matches .Vid__cards .Vid .vid-matches {
+    width: 100%;
+    height: 300px;
+  }
 }
 
 .container-form-contac {
@@ -524,22 +534,33 @@ body {
   transition: 0.2s;
 }
 
-.container__news {
-  width: 60%;
-  margin: auto;
-  padding: 16px;
-  background-color: #ffffff;
-}
-.container__news .container__title-news {
+.title__sections, .container__news .container__title-news, .container__info-elland-road .container__title-elland-road, .container-matches .container-vid-matches .container__title-matches {
   transform: skew(-20deg);
 }
-.container__news .container__title-news h3, .container__news .container__title-news .h3 {
+.title__sections h3, .title__sections .h3, .container__news .container__title-news h3, .container__news .container__title-news .h3, .container__info-elland-road .container__title-elland-road h3, .container__info-elland-road .container__title-elland-road .h3, .container-matches .container-vid-matches .container__title-matches h3, .container-matches .container-vid-matches .container__title-matches .h3 {
   display: inline-block;
   background-color: #FFDE10;
   padding: 4px;
   color: #005B9E;
   font-family: "Barlow-Medium";
   font-size: 16PX;
+}
+@media (max-width: 1000px) {
+  .title__sections h3, .title__sections .h3, .container__news .container__title-news h3, .container__news .container__title-news .h3, .container__info-elland-road .container__title-elland-road h3, .container__info-elland-road .container__title-elland-road .h3, .container-matches .container-vid-matches .container__title-matches h3, .container-matches .container-vid-matches .container__title-matches .h3 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 720px) {
+  .title__sections h3, .title__sections .h3, .container__news .container__title-news h3, .container__news .container__title-news .h3, .container__info-elland-road .container__title-elland-road h3, .container__info-elland-road .container__title-elland-road .h3, .container-matches .container-vid-matches .container__title-matches h3, .container-matches .container-vid-matches .container__title-matches .h3 {
+    font-size: 10px;
+  }
+}
+
+.container__news {
+  width: 60%;
+  margin: auto;
+  padding: 16px;
+  background-color: #ffffff;
 }
 .container__news .secction__news h3, .container__news .secction__news .h3 {
   font-family: "Barlow-Regular";

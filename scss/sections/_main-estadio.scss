@@ -4,10 +4,9 @@
     margin-block: 28px;
     background-color: #ffffff;
 
-    h3 {
-        color: $primary-color;
-        font-family:"Barlow-Medium";
-    }
+   .container__title-elland-road {
+    @extend .title__sections;
+   }
 
     p {
         font-family: "Barlow-Regular";
@@ -23,12 +22,20 @@
     }
 
     @media (max-width:$media-720) {
-        h3 {
-            font-size: 16px;
-        }
+        width: 90%;
+
 
         p {
             font-size: 12px;
+        }
+
+        .container__ubicación {
+            
+    
+            iframe {
+                width: 100%;
+                height: 250px;
+            }
         }
     }
 

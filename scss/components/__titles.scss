@@ -1,0 +1,24 @@
+.title__sections {
+    transform: skew(-20deg);
+
+    h3 {
+        display: inline-block;
+        background-color: $secondary-color;
+        padding: 4px;
+        color: $primary-color;
+        font-family: "Barlow-Medium";
+        font-size: 16PX;
+    }
+
+    @media (max-width:$media-1000) {
+        h3 {
+            font-size: 12px;
+        }
+    }
+
+    @media (max-width:$media-720) {
+        h3 {
+            font-size: 10px;
+        }
+    }
+}

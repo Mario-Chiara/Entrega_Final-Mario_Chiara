@@ -5,16 +5,7 @@
     background-color: #ffffff;
 
     .container__title-news {
-        transform: skew(-20deg);
-
-        h3 {
-            display: inline-block;
-            background-color: $secondary-color;
-            padding: 4px;
-            color: $primary-color;
-            font-family: "Barlow-Medium";
-            font-size: 16PX;
-        }
+     @extend .title__sections;
     }
 
     .secction__news {

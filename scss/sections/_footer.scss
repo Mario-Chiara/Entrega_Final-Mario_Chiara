@@ -31,6 +31,7 @@ footer {
         align-items: center;
 
         a {
+            width: 100%;
             padding: 2px;
         }
     }
@@ -44,10 +45,18 @@ footer {
         .footer__logo {
             width: 30px;
         }
-
+        
         .footer__info {
-            width: 80%;
+            width: 100%;
+            p{
+                font-size: 12px;
+            }
         }
-
+        
+        .footer__redes {
+            img {
+                width: 26px;
+            }
+        }
     }
 }

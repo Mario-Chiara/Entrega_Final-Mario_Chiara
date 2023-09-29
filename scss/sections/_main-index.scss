@@ -1,11 +1,11 @@
 body {
-    background-image: url(/resources/img/backgrounds/1.webp);
+    background-image: url(../resources/img/backgrounds/1.webp);
 }
 
 .container__nextmatch {
     width: 80%;
     margin: auto;
-    margin-block: 1%;
+    margin-block: 2%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -75,7 +75,7 @@ body {
 
     }
 
-    @media (max-width:$media-1000){
+    @media (max-width:$media-1000) {
         .nextmach__teams .nextmach__date p {
             margin-bottom: 0%;
             font-size: 12px;
@@ -83,6 +83,11 @@ body {
     }
 
     @media (max-width:$media-720) {
+        width: 96%;
+
+        .nextmach__teams img {
+            width: 26px;
+        }
 
         .nextmatch__logo img {
             width: 100px;
@@ -91,7 +96,7 @@ body {
 
         .nextmach__teams h3 {
             width: auto;
-            font-size: 12px;
+            font-size: 10px;
             display: flex;
             justify-content: center;
             margin-bottom: 0%;
@@ -99,8 +104,9 @@ body {
 
         .nextmach__teams .nextmach__date p {
             margin-bottom: 0%;
-            font-size: 10px;
+            font-size: 8px;
         }
+
     }
 
 
@@ -111,7 +117,7 @@ body {
     margin: auto;
     overflow: hidden;
     position: relative;
-    margin-block: 1%;
+    margin-block: 2%;
 
     img {
         width: 100%;
@@ -147,10 +153,13 @@ body {
     }
 
     @media (max-width:$media-720) {
+        width: 96%;
+        border-radius: 8px;
+
         .button__banner-home {
-            width: 80px;
-            height: 40px;
-            font-size: 16px;
+            width: 50px;
+            height: 26px;
+            font-size: 12px;
             opacity: 1;
         }
 
@@ -164,7 +173,6 @@ body {
     opacity: 0.7;
     transition: 0.7s;
     transform: scale(1.02);
-
 }
 
 .container-banner-home:hover .button__banner-home {
@@ -172,7 +180,6 @@ body {
     transition: 0.7s;
     background-image: url(/resources/img/backgrounds/1.webp);
 }
-
 
 .container__lastnews {
     width: 80%;
@@ -182,15 +189,9 @@ body {
     grid-template-rows: repeat(4, 1fr);
     grid-gap: 1%;
 
-
     .lastnews__item {
         position: relative;
         overflow: hidden;
-
-        @media (max-width:$media-720) {
-            box-shadow: 5px 5px 10px rgba(83, 83, 83, 0.3);
-            border-radius: 8px;
-        }
 
         .lastnews__item-text {
             width: 100%;
@@ -208,30 +209,33 @@ body {
                 margin: 0;
                 color: $primary-color;
                 font-family: "Barlow-Medium";
-    
             }
-    
+
             p {
-                padding: 8px 8px 0px 8px;
+                padding: 0px 8px 8px 8px;
                 font-family: "Barlow-Regular";
                 color: #000000;
+                margin: 0;
             }
+        }
+    }
 
-            @media (max-width:$media-1000){
-                
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    
+
+    .lastnews__item:hover .lastnews__item-text {
+        bottom: 0px;
+        transition: 0.7s;
+    }
+
+    @media (max-width:$media-1000) {
+        .lastnews__item {
+            .lastnews__item-text {
                 bottom: -50px;
-
-                h5 {
-                    font-size: 18px;
-                }
-
-                p {
-                    font-size: 12px;
-                }
-            }
-
-            @media (max-width:$media-720) {
-                bottom: 0px;
 
                 h5 {
                     font-size: 16px;
@@ -242,28 +246,28 @@ body {
                 }
             }
         }
-
-
     }
 
     @media (max-width:$media-720) {
+        width: 96%;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(8, 1fr);
-    }
 
-    img {
-        width: 100%;
-        height: 100%;
-    }
+        .lastnews__item {
+            border-radius: 8px;
 
-    .lastnews__item:hover {
-        box-shadow: 5px 5px 10px rgba(83, 83, 83, 0.3);
-    }
+            .lastnews__item-text {
+                bottom: -19px;
 
-    .lastnews__item:hover .lastnews__item-text {
-        bottom: 0px;
-        transition: 0.7s;
-    }
+                h5 {
+                    font-size: 12px;
+                }
 
+                p {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
 }
